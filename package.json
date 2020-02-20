@@ -1,0 +1,29 @@
+{
+  "name": "ahis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amruldin/ahisNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amruldin/ahisNode/issues"
+  },
+  "homepage": "https://github.com/amruldin/ahisNode#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.1.0",
+    "nodemon": "^2.0.2",
+    "request": "^2.88.2",
+    "sequelizer": "^1.1.4"
+  }
+}
