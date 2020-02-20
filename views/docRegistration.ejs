@@ -1,0 +1,108 @@
+
+<%- include('./partials/head') %>;
+    <div class="container">
+      <div class="page-header">
+        <p class="lead text-center">
+          <i class="glyphicon glyphicon-log-in docRegTitle"></i> Welcome To AHIS registration panel
+        </p>
+      </div>
+      <form class="form-horizontal col-xs-4 col-xs-offset-4" role="form">
+        <div class="form-group">
+          <label for="FullName">Full Name</label>
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="glyphicon glyphicon-user"></i>
+            </div>
+            <input type="text" class="form-control" id="FullName" placeholder="Full Name" data-validation="custom"
+              data-validation-regexp="^([a-zA-Z ]+)$" data-validation="length" data-validation-length="1-100"
+              data-validation-error-msg-container="#ErrorName" required>
+          </div>
+          <span id="ErrorName"></span>
+        </div>
+        <div class="form-group">
+          <label for="Email">Email Address</label>
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="glyphicon glyphicon-envelope"></i>
+            </div>
+            <input type="email" class="form-control" id="Email" placeholder="Email Address" data-validation="email"
+              data-validation-error-msg-container="#ErrorEmail" required>
+          </div>
+          <span id="ErrorEmail"></span>
+        </div>
+        <div class="form-group">
+          <label for="Password">Password</label>
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="glyphicon glyphicon-lock"></i>
+            </div>
+            <input type="password" class="form-control" id="Password" placeholder="Password" name="pass_confirmation"
+              data-validation="length" data-validation-length="min8" data-validation-error-msg-container="#ErrorPassword"
+              required>
+          </div>
+          <span id="ErrorPassword"></span>
+        </div>
+        <div class="form-group">
+          <label for="ConfirmPassword">Confirm Password:</label>
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="glyphicon glyphicon-lock"></i>
+            </div>
+            <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password" name="pass"
+              data-validation="confirmation" data-validation-error-msg-container="#ErrorConfirmPassword" required>
+          </div>
+          <span id="ErrorConfirmPassword"></span>
+        </div>
+        <div class="form-group">
+          <label for="Country">Country:</label>
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="glyphicon glyphicon-globe" aria-hidden="true"></i>
+            </div>
+            <input name="user_country" data-validation="country" placeholder="Country" id="Country" class="form-control"
+              data-validation-error-msg-container="#ErrorCountry" required>
+          </div>
+          <span id="ErrorCountry"></span>
+        </div>
+        <div class="form-group">
+          <label for="DOB">Date of Birth</label>
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="glyphicon glyphicon-calendar"></i>
+            </div>
+            <input type="text" class="form-control" id="DOB" placeholder="Date of Birth" data-validation="date"
+              data-validation-format="dd/mm/yyyy" data-validation-error-msg-container="#ErrorDOB" required>
+          </div>
+          <span id="ErrorDOB"></span>
+        </div>
+        <div class="form-group">
+          <label for="UploadAvatar">Upload Avatar:</label>
+          <div class="input-group">
+            <div class="input-group-addon">
+              <i class="glyphicon glyphicon-camera"></i>
+            </div>
+            <input type="file" class="form-control" id="UploadAvatar" type="file" data-validation="mime size"
+              data-validation-allowing="jpg, png, gif" data-validation-max-size="10M"
+              data-validation-error-msg-container="#ErrorPic" required>
+          </div>
+          <span id="ErrorPic"></span>
+        </div>
+        <div class="checkbox form-group">
+          <label>
+            <input type="checkbox" required>I accept terms and conditions and
+            <a href="">privacy policy</a>
+          </label>
+        </div>
+        <br>
+        <div class="form-group">
+          <input type="submit" class="form-control btn btn-primary" value="Sign Up">
+        </div>
+        <div class="form-group">
+          <input type="submit" class="form-control btn btn-info" value="Sign In">
+        </div>
+      </form>
+    </div>
+
+
+<%- include('./partials/end') %>;
+   
