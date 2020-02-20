@@ -198,3 +198,12 @@ body {
   
 
 
+  .table
+  {
+      color: white;
+  }
+
+  a{
+      color: white;
+      text-decoration: none;
+  }
